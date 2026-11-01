@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the associated manuscript."
+title: "dcbias-ofdm-benchmark: simulator, controllers and stored results for learned versus model-based DC-bias control in DCO-OFDM LiFi"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Soomro
+    given-names: Sarmad
+    orcid: "https://orcid.org/0000-0001-6677-1332"
+    affiliation: "School of Information Technology, Whitecliffe College, Christchurch, New Zealand"
+  - family-names: Govindaraju
+    given-names: Shreepragatheesh
+    orcid: "https://orcid.org/0009-0000-4365-3712"
+  - family-names: Wagan
+    given-names: Asif Ali
+    orcid: "https://orcid.org/0000-0003-1410-5180"
+    affiliation: "Department of Information Technology, Shaheed Benazir Bhutto University, Shaheed Benazirabad, Pakistan"
+license: MIT
+repository-code: "https://github.com/sarmadsoomro/dcbias-ofdm-benchmark"
+abstract: >-
+  Electrothermal DCO-OFDM LiFi simulator, learned and model-based DC-bias controllers,
+  evaluation code, and the stored results of the benchmark reported in the manuscript
+  "Learned or Model-Based DC-Bias Control for DCO-OFDM LiFi? A Simulation Benchmark Under
+  LED Model Error and Device Shift".

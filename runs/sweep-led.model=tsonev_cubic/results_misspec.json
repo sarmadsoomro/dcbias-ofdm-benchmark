@@ -1,0 +1,426 @@
+{
+ "_eval_provenance": {
+  "sha": "003aef9e1dcbb23c4408dd9af2560b264882775e",
+  "dirty": false
+ },
+ "declared": {
+  "true_form": {},
+  "form_quadratic": {
+   "led.model": "quadratic"
+  }
+ },
+ "best_ml_state_obs": "ML_ridge_state_obs",
+ "results_main_eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e",
+ "confirmatory_delta_true_form": {
+  "test_id": {
+   "point": 8.638560494806963e-05,
+   "ci": [
+    -6.0714972783718163e-05,
+    0.0002420867300906766
+   ],
+   "p_le0": 0.13858614138586142
+  }
+ },
+ "B7w_delta_true_form": {
+  "test_id": {
+   "point": -0.00019214268850242916,
+   "ci": [
+    -0.0003836901069255875,
+    -5.639925041038291e-05
+   ],
+   "p_le0": 1.0
+  }
+ },
+ "delta_minus_best_ml": {
+  "B6b_model_grid@true_form": {
+   "test_id": {
+    "point": 0.0002469785862444847,
+    "ci": [
+     6.860712505599299e-05,
+     0.00042995019156930465
+    ],
+    "p_le0": 0.0032996700329967
+   }
+  },
+  "B6b_model_grid@form_quadratic": {
+   "test_id": {
+    "point": 0.009525887023873896,
+    "ci": [
+     0.008606924850517306,
+     0.010517888174668385
+    ],
+    "p_le0": 9.999000099990002e-05
+   }
+  },
+  "B7_bayes@form_quadratic": {
+   "test_id": {
+    "point": 0.010301219111261554,
+    "ci": [
+     0.009636093421234889,
+     0.011024073456878123
+    ],
+    "p_le0": 9.999000099990002e-05
+   }
+  },
+  "B7w_bayes_wave@form_quadratic": {
+   "test_id": {
+    "point": 0.010028384463555098,
+    "ci": [
+     0.009357603233890968,
+     0.01077451392226854
+    ],
+    "p_le0": 9.999000099990002e-05
+   }
+  }
+ },
+ "test": {
+  "test_id": {
+   "ML_ridge_state_obs": {
+    "n": 1000,
+    "mean_regret": 0.00042155510480890385,
+    "p95_regret": 0.0015978187068045088,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.0003250803437607996,
+     "1e-12": 0.0005859123385853393
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.001408702191193384,
+    "rmse_A": 0.0019997940359593566,
+    "r2_vs_oracle": 0.9978148476028753,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.001408702191193384,
+    "r2_vs_oracle_unimodal": 0.9978148476028753
+   },
+   "B6b_model_grid@true_form": {
+    "n": 1000,
+    "mean_regret": 0.0006685336910533886,
+    "p95_regret": 0.0025459101147106565,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.00047321326199031665,
+     "1e-12": 0.0008422108973903553
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.0018585156669624174,
+    "rmse_A": 0.0024567556708718747,
+    "r2_vs_oracle": 0.9967021178830824,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.0018585156669624174,
+    "r2_vs_oracle_unimodal": 0.9967021178830824
+   },
+   "B6b_model_grid@form_quadratic": {
+    "n": 1000,
+    "mean_regret": 0.009947442128682798,
+    "p95_regret": 0.04217536415767758,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.007766064812918337,
+     "1e-12": 0.012391356432078065
+    },
+    "fec_violation_rate": 0.002577319587628866,
+    "mae_A": 0.012880677202671605,
+    "rmse_A": 0.013670282231411243,
+    "r2_vs_oracle": 0.8978904986862055,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.012880677202671605,
+    "r2_vs_oracle_unimodal": 0.8978904986862055
+   },
+   "B7_bayes@form_quadratic": {
+    "n": 1000,
+    "mean_regret": 0.01072277421607046,
+    "p95_regret": 0.041463173731427196,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.008608771450598575,
+     "1e-12": 0.013760006588568564
+    },
+    "fec_violation_rate": 0.005154639175257732,
+    "mae_A": 0.013894183395953285,
+    "rmse_A": 0.014750742479981217,
+    "r2_vs_oracle": 0.8811117442189391,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.013894183395953285,
+    "r2_vs_oracle_unimodal": 0.8811117442189391
+   },
+   "B7w_bayes_wave@form_quadratic": {
+    "n": 1000,
+    "mean_regret": 0.010449939568364004,
+    "p95_regret": 0.04126492387463822,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.008476732266959879,
+     "1e-12": 0.01351415151552647
+    },
+    "fec_violation_rate": 0.005154639175257732,
+    "mae_A": 0.013989676213405619,
+    "rmse_A": 0.014769394819617367,
+    "r2_vs_oracle": 0.8808108853065421,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.013989676213405619,
+    "r2_vs_oracle_unimodal": 0.8808108853065421
+   }
+  },
+  "test_id/base": {
+   "ML_ridge_state_obs": {
+    "n": 500,
+    "mean_regret": 0.00024274999879193626,
+    "p95_regret": 0.00124774858330967,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.00016544157044499398,
+     "1e-12": 0.0003002129479261023
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.0013587397311360663,
+    "rmse_A": 0.0018468664385963593,
+    "r2_vs_oracle": 0.9983591844958611,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.0013587397311360663,
+    "r2_vs_oracle_unimodal": 0.9983591844958611
+   },
+   "B6b_model_grid@true_form": {
+    "n": 500,
+    "mean_regret": 0.00020666811084689928,
+    "p95_regret": 0.001058847140808016,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.00015465760208119316,
+     "1e-12": 0.00027640955944255286
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.0014342495350672564,
+    "rmse_A": 0.0018576564526427322,
+    "r2_vs_oracle": 0.9983399560995277,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.0014342495350672564,
+    "r2_vs_oracle_unimodal": 0.9983399560995277
+   },
+   "B6b_model_grid@form_quadratic": {
+    "n": 500,
+    "mean_regret": 0.012206785311938913,
+    "p95_regret": 0.05070249994924271,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.009395748307688504,
+     "1e-12": 0.01526550211318786
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.015110291621290396,
+    "rmse_A": 0.015418475106268426,
+    "r2_vs_oracle": 0.8856406652710574,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.015110291621290396,
+    "r2_vs_oracle_unimodal": 0.8856406652710574
+   },
+   "B7_bayes@form_quadratic": {
+    "n": 500,
+    "mean_regret": 0.011826651690851776,
+    "p95_regret": 0.044263695673737884,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.009638757577989607,
+     "1e-12": 0.015334285671030764
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.015737256344489952,
+    "rmse_A": 0.016247484296543786,
+    "r2_vs_oracle": 0.8730124851401552,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.015737256344489952,
+    "r2_vs_oracle_unimodal": 0.8730124851401552
+   },
+   "B7w_bayes_wave@form_quadratic": {
+    "n": 500,
+    "mean_regret": 0.011851797605129506,
+    "p95_regret": 0.044263695673737884,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.009663903492267338,
+     "1e-12": 0.015359431585308494
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.015762667394604198,
+    "rmse_A": 0.016271615077583707,
+    "r2_vs_oracle": 0.8726350010427266,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.015762667394604198,
+    "r2_vs_oracle_unimodal": 0.8726350010427266
+   }
+  },
+  "test_id/foldback": {
+   "ML_ridge_state_obs": {
+    "n": 500,
+    "mean_regret": 0.0006003602108258714,
+    "p95_regret": 0.0022003595247336687,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.0004847191170766052,
+     "1e-12": 0.0008716117292445762
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.0014586646512507017,
+    "rmse_A": 0.0021418302291506728,
+    "r2_vs_oracle": 0.9968654381801021,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.0014586646512507017,
+    "r2_vs_oracle_unimodal": 0.9968654381801021
+   },
+   "B6b_model_grid@true_form": {
+    "n": 500,
+    "mean_regret": 0.0011303992712598779,
+    "p95_regret": 0.005299348389932981,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.0007917689218994401,
+     "1e-12": 0.0014080122353381578
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.0022827817988575784,
+    "rmse_A": 0.002936053364071752,
+    "r2_vs_oracle": 0.9941097376097514,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.0022827817988575784,
+    "r2_vs_oracle_unimodal": 0.9941097376097514
+   },
+   "B6b_model_grid@form_quadratic": {
+    "n": 500,
+    "mean_regret": 0.007688098945426687,
+    "p95_regret": 0.031420077582060224,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.006136381318148171,
+     "1e-12": 0.009517210750968277
+    },
+    "fec_violation_rate": 0.00546448087431694,
+    "mae_A": 0.010651062784052819,
+    "rmse_A": 0.011662926646869423,
+    "r2_vs_oracle": 0.9070558970429718,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.010651062784052819,
+    "r2_vs_oracle_unimodal": 0.9070558970429718
+   },
+   "B7_bayes@form_quadratic": {
+    "n": 500,
+    "mean_regret": 0.00961889674128914,
+    "p95_regret": 0.03357599803025608,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.007578785323207541,
+     "1e-12": 0.012185727506106362
+    },
+    "fec_violation_rate": 0.01092896174863388,
+    "mae_A": 0.012051110447416613,
+    "rmse_A": 0.013083885564120774,
+    "r2_vs_oracle": 0.8830284551084602,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.012051110447416613,
+    "r2_vs_oracle_unimodal": 0.8830284551084602
+   },
+   "B7w_bayes_wave@form_quadratic": {
+    "n": 500,
+    "mean_regret": 0.0090480815315985,
+    "p95_regret": 0.03230975176221672,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.007289561041652419,
+     "1e-12": 0.011668871445744449
+    },
+    "fec_violation_rate": 0.01092896174863388,
+    "mae_A": 0.012216685032207046,
+    "rmse_A": 0.013095976078262793,
+    "r2_vs_oracle": 0.8828121738597818,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.012216685032207046,
+    "r2_vs_oracle_unimodal": 0.8828121738597818
+   }
+  },
+  "test_id/fec_relevant": {
+   "ML_ridge_state_obs": {
+    "n": 388,
+    "mean_regret": 0.0008493863265914183,
+    "p95_regret": 0.002709932934320687,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.000600740035230325,
+     "1e-12": 0.001272987444571922
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.001550965336627229,
+    "rmse_A": 0.002160999654158835,
+    "r2_vs_oracle": 0.9974212573445802,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.001550965336627229,
+    "r2_vs_oracle_unimodal": 0.9974212573445802
+   },
+   "B6b_model_grid@true_form": {
+    "n": 388,
+    "mean_regret": 0.001310379415114012,
+    "p95_regret": 0.006139140067363325,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.0008069762474256824,
+     "1e-12": 0.0017580010809309366
+    },
+    "fec_violation_rate": 0.0,
+    "mae_A": 0.0019466443347045087,
+    "rmse_A": 0.002530664891935386,
+    "r2_vs_oracle": 0.9964635470085675,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.0019466443347045087,
+    "r2_vs_oracle_unimodal": 0.9964635470085675
+   },
+   "B6b_model_grid@form_quadratic": {
+    "n": 388,
+    "mean_regret": 0.019140747032081268,
+    "p95_regret": 0.060096302513579024,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.013518640548152239,
+     "1e-12": 0.025439495236708243
+    },
+    "fec_violation_rate": 0.002577319587628866,
+    "mae_A": 0.012734227365093437,
+    "rmse_A": 0.013537692528329601,
+    "r2_vs_oracle": 0.8987982782077898,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.012734227365093437,
+    "r2_vs_oracle_unimodal": 0.8987982782077898
+   },
+   "B7_bayes@form_quadratic": {
+    "n": 388,
+    "mean_regret": 0.01998986014954392,
+    "p95_regret": 0.058631369805353294,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.014541399413791642,
+     "1e-12": 0.027817778635363777
+    },
+    "fec_violation_rate": 0.005154639175257732,
+    "mae_A": 0.01314372734188602,
+    "rmse_A": 0.014051103209183482,
+    "r2_vs_oracle": 0.8909766664968347,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.01314372734188602,
+    "r2_vs_oracle_unimodal": 0.8909766664968347
+   },
+   "B7w_bayes_wave@form_quadratic": {
+    "n": 388,
+    "mean_regret": 0.019462876903657313,
+    "p95_regret": 0.055484098666825014,
+    "below_i_min_share": 0.0,
+    "regret_floor_sensitivity": {
+     "1e-06": 0.014377291075296166,
+     "1e-12": 0.027360330375725533
+    },
+    "fec_violation_rate": 0.005154639175257732,
+    "mae_A": 0.013266758845300208,
+    "rmse_A": 0.014088892678410753,
+    "r2_vs_oracle": 0.8903894565128853,
+    "unimodal_share": 1.0,
+    "mae_A_unimodal": 0.013266758845300208,
+    "r2_vs_oracle_unimodal": 0.8903894565128853
+   }
+  }
+ }
+}

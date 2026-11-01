@@ -1,0 +1,488 @@
+{
+ "by_sweep": {
+  "driver.f_min=0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.001423355153691097,
+   "regret_ml": 0.0017977751867219287,
+   "delta": {
+    "point": -0.00037442003303083147,
+    "ci": [
+     -0.0007452872776108145,
+     -5.032255839023525e-05
+    ],
+    "p_le0": 0.9899010098990101
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.f_min=0.8": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0011626047610962546,
+   "regret_ml": 0.001547437671417917,
+   "delta": {
+    "point": -0.0003848329103216624,
+    "ci": [
+     -0.0007049738474549707,
+     -7.406299079080005e-05
+    ],
+    "p_le0": 0.9929007099290071
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.knee_K=353.0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices",
+   "regret_non_ml": 0.0016869814156206077,
+   "regret_ml": 0.001715731373234718,
+   "delta": {
+    "point": -2.8749957614110254e-05,
+    "ci": [
+     -0.00023672977698560067,
+     0.00015322524090476909
+    ],
+    "p_le0": 0.5907409259074092
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.knee_K=373.0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0011524816440561215,
+   "regret_ml": 0.0017356339138000498,
+   "delta": {
+    "point": -0.0005831522697439285,
+    "ci": [
+     -0.0009249647348762222,
+     -0.0002617650078242824
+    ],
+    "p_le0": 1.0
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.knee_K=388.0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices",
+   "regret_non_ml": 0.0011767230190874727,
+   "regret_ml": 0.0014992603875243113,
+   "delta": {
+    "point": -0.0003225373684368386,
+    "ci": [
+     -0.0006737451077795202,
+     1.6291149378759833e-05
+    ],
+    "p_le0": 0.9691030896910309
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.slope_per_K=0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices",
+   "regret_non_ml": 0.0011975261525130506,
+   "regret_ml": 0.001492880085873661,
+   "delta": {
+    "point": -0.00029535393336061063,
+    "ci": [
+     -0.000689896241219249,
+     8.700994693136903e-05
+    ],
+    "p_le0": 0.9304069593040696
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.slope_per_K=0.003": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices",
+   "regret_non_ml": 0.0011802772968702122,
+   "regret_ml": 0.0014703068500496236,
+   "delta": {
+    "point": -0.00029002955317941164,
+    "ci": [
+     -0.0006340718382022572,
+     1.9870817249461536e-05
+    ],
+    "p_le0": 0.9646035396460354
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.slope_per_K=0.016": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: ML lower regret",
+   "regret_non_ml": 0.002338388540724525,
+   "regret_ml": 0.0016501224558093889,
+   "delta": {
+    "point": 0.0006882660849151359,
+    "ci": [
+     0.00026733802157618885,
+     0.001161264733018575
+    ],
+    "p_le0": 0.0006999300069993001
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.slope_per_K=0.02": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: ML lower regret",
+   "regret_non_ml": 0.0028195052691114336,
+   "regret_ml": 0.001622959471347586,
+   "delta": {
+    "point": 0.0011965457977638476,
+    "ci": [
+     8.520251327790399e-05,
+     0.0025052794679617783
+    ],
+    "p_le0": 0.017598240175982403
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "driver.slope_per_K=0.03": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: ML lower regret",
+   "regret_non_ml": 0.0032273573545884807,
+   "regret_ml": 0.0016576618143312528,
+   "delta": {
+    "point": 0.0015696955402572281,
+    "ci": [
+     0.0008467995707010283,
+     0.0024060449648217663
+    ],
+    "p_le0": 9.999000099990002e-05
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "joint_led.kappa_tilde=0.0_noise.rho=0.0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_rf_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: ML lower regret",
+   "regret_non_ml": 0.0013172237829284985,
+   "regret_ml": 0.0006011938798883439,
+   "delta": {
+    "point": 0.0007160299030401547,
+    "ci": [
+     0.000355980666620933,
+     0.001136115128869207
+    ],
+    "p_le0": 9.999000099990002e-05
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.delta=0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0016198364532870847,
+   "regret_ml": 0.0020767611428413988,
+   "delta": {
+    "point": -0.0004569246895543141,
+    "ci": [
+     -0.0008721430674647687,
+     -0.00010165809158496156
+    ],
+    "p_le0": 0.9969003099690031
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.delta=0.001": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.001445385043799047,
+   "regret_ml": 0.0018285801463530068,
+   "delta": {
+    "point": -0.0003831951025539599,
+    "ci": [
+     -0.000787155960102058,
+     -4.9131774961057614e-05
+    ],
+    "p_le0": 0.991000899910009
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.delta=0.003": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.001397195717358989,
+   "regret_ml": 0.0015627839562133486,
+   "delta": {
+    "point": -0.0001655882388543597,
+    "ci": [
+     -0.0003492453845876627,
+     -5.169811801476483e-06
+    ],
+    "p_le0": 0.9786021397860214
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.f3dB_over_B=0.5": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0009140173898141023,
+   "regret_ml": 0.0011459457540506702,
+   "delta": {
+    "point": -0.0002319283642365679,
+    "ci": [
+     -0.0004874006043667751,
+     -2.201107495328665e-05
+    ],
+    "p_le0": 0.987001299870013
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.f3dB_over_B=null": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0017598261290819866,
+   "regret_ml": 0.0024241109935674173,
+   "delta": {
+    "point": -0.0006642848644854304,
+    "ci": [
+     -0.001128345355963784,
+     -0.0002273984726063655
+    ],
+    "p_le0": 0.9991000899910009
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.i_min_frac=0.0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0009134516837880434,
+   "regret_ml": 0.0011728993372704143,
+   "delta": {
+    "point": -0.00025944765348237124,
+    "ci": [
+     -0.00048720687004505077,
+     -4.271143111817855e-05
+    ],
+    "p_le0": 0.992000799920008
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.i_min_frac=0.05": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices",
+   "regret_non_ml": 0.0012376439714371149,
+   "regret_ml": 0.001457063552635659,
+   "delta": {
+    "point": -0.00021941958119854426,
+    "ci": [
+     -0.0005885288910435093,
+     9.282733823549766e-05
+    ],
+    "p_le0": 0.898010198980102
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.kappa_tilde=0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_rf_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: ML lower regret",
+   "regret_non_ml": 0.0013206355543000617,
+   "regret_ml": 0.0006158237480759544,
+   "delta": {
+    "point": 0.0007048118062241071,
+    "ci": [
+     0.000350227435785283,
+     0.0011322810814888456
+    ],
+    "p_le0": 9.999000099990002e-05
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.kappa_tilde=0.15": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0011011672861214398,
+   "regret_ml": 0.001824200252137681,
+   "delta": {
+    "point": -0.0007230329660162411,
+    "ci": [
+     -0.0012488499661899171,
+     -0.00032863529226087693
+    ],
+    "p_le0": 1.0
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.kappa_tilde=0.42": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0014061583171668503,
+   "regret_ml": 0.001797136302046699,
+   "delta": {
+    "point": -0.000390977984879849,
+    "ci": [
+     -0.0006821111956445473,
+     -0.00011958455189413724
+    ],
+    "p_le0": 0.9984001599840016
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "led.model=tsonev_cubic": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices",
+   "regret_non_ml": 0.0005079407097569735,
+   "regret_ml": 0.00042155510480890385,
+   "delta": {
+    "point": 8.638560494806963e-05,
+    "ci": [
+     -6.0714972783718163e-05,
+     0.0002420867300906766
+    ],
+    "p_le0": 0.13858614138586142
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e",
+   "misspec": {
+    "B6b_model_grid@true_form": {
+     "test_id": {
+      "point": 0.0002469785862444847,
+      "ci": [
+       6.860712505599299e-05,
+       0.00042995019156930465
+      ],
+      "p_le0": 0.0032996700329967
+     }
+    },
+    "B6b_model_grid@form_quadratic": {
+     "test_id": {
+      "point": 0.009525887023873896,
+      "ci": [
+       0.008606924850517306,
+       0.010517888174668385
+      ],
+      "p_le0": 9.999000099990002e-05
+     }
+    },
+    "B7_bayes@form_quadratic": {
+     "test_id": {
+      "point": 0.010301219111261554,
+      "ci": [
+       0.009636093421234889,
+       0.011024073456878123
+      ],
+      "p_le0": 9.999000099990002e-05
+     }
+    },
+    "B7w_bayes_wave@form_quadratic": {
+     "test_id": {
+      "point": 0.010028384463555098,
+      "ci": [
+       0.009357603233890968,
+       0.01077451392226854
+      ],
+      "p_le0": 9.999000099990002e-05
+     }
+    }
+   }
+  },
+  "noise.rho=0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0014407101529856875,
+   "regret_ml": 0.0017891470932169008,
+   "delta": {
+    "point": -0.00034843694023121334,
+    "ci": [
+     -0.0007148125478938203,
+     -3.373821794833471e-05
+    ],
+    "p_le0": 0.9864013598640136
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "noise.rho=0.1": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices",
+   "regret_non_ml": 0.0013894014230770443,
+   "regret_ml": 0.0016754861902276961,
+   "delta": {
+    "point": -0.00028608476715065185,
+    "ci": [
+     -0.0006196907700556349,
+     1.764302665272171e-05
+    ],
+    "p_le0": 0.9661033896610339
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "noise.rho=1.0": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0013659624609762254,
+   "regret_ml": 0.0017667441436972446,
+   "delta": {
+    "point": -0.0004007816827210193,
+    "ci": [
+     -0.0007282824045620731,
+     -0.00013531746649434148
+    ],
+    "p_le0": 1.0
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "nominal": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.001423355153691097,
+   "regret_ml": 0.0017977751867219287,
+   "delta": {
+    "point": -0.00037442003303083147,
+    "ci": [
+     -0.0007452872776108145,
+     -5.032255839023525e-05
+    ],
+    "p_le0": 0.9899010098990101
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  },
+  "unit_spread.Rth=0.15": {
+   "best_non_ml": "B7_bayes",
+   "best_ml": "ML_ridge_state_obs",
+   "framing": "(b) equivalence: model-based or LUT control suffices; direction: non-ML lower regret",
+   "regret_non_ml": 0.0014206893885656128,
+   "regret_ml": 0.0018055153944270272,
+   "delta": {
+    "point": -0.0003848260058614143,
+    "ci": [
+     -0.0007535488106555226,
+     -5.860921439064973e-05
+    ],
+    "p_le0": 0.9911008899110089
+   },
+   "eval_sha": "7f2e30715adfc8961a45e02974356377fd87f36e"
+  }
+ },
+ "range": {
+  "n": 27,
+  "delta_point_min": -0.0007230329660162411,
+  "delta_point_max": 0.0015696955402572281,
+  "ci_abs_max": 0.0025052794679617783,
+  "n_framing_b": 27,
+  "n_best_non_ml_B7": 27,
+  "n_ci_above_0": 5,
+  "n_ci_below_0": 15
+ }
+}

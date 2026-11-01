@@ -1,0 +1,2282 @@
+{
+ "_eval_provenance": {
+  "sha": "7f2e30715adfc8961a45e02974356377fd87f36e",
+  "dirty": false
+ },
+ "cells": [
+  {
+   "lambda_T": 0,
+   "lambda_W": 0,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.0010575453768467528,
+     "ci": [
+      0.0006550523337479032,
+      0.0015032044479460801
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.0010575453768467528,
+     "ci": [
+      0.0006550523337479032,
+      0.0015032044479460801
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 0.25,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002878819197932203,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0028833090555139365,
+    "wave_minus_thermal": {
+     "point": 0.0010604536322337287,
+     "ci": [
+      0.0006592069319752241,
+      0.001505722673997451
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.0028779861493308297,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0028827280926131977,
+    "wave_minus_thermal": {
+     "point": 0.001059620583632356,
+     "ci": [
+      0.0006587352701682978,
+      0.001504698538113137
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 0.5,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002882402227276909,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0028887915041321283,
+    "wave_minus_thermal": {
+     "point": 0.001064036661578435,
+     "ci": [
+      0.0006605056229334238,
+      0.0015099392561181704
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002880527505988968,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0028868600532946163,
+    "wave_minus_thermal": {
+     "point": 0.0010621619402904946,
+     "ci": [
+      0.0006592635561437718,
+      0.0015071077157304705
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 1,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002891654663992013,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.002899623610066708,
+    "wave_minus_thermal": {
+     "point": 0.0010732890982935392,
+     "ci": [
+      0.0006730823692479941,
+      0.0015188771535043272
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002893991716749337,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0029019311885687964,
+    "wave_minus_thermal": {
+     "point": 0.0010756261510508635,
+     "ci": [
+      0.000674709174350094,
+      0.0015183276903703513
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 2,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002912564512843404,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.002920208036144596,
+    "wave_minus_thermal": {
+     "point": 0.00109419894714493,
+     "ci": [
+      0.0006908802674310094,
+      0.0015477457830718427
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002920469416002078,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0029293719510547554,
+    "wave_minus_thermal": {
+     "point": 0.0011021038503036043,
+     "ci": [
+      0.0006939509703497634,
+      0.0015531500833482598
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 4,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.002944140835265855,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0029549265501239226,
+    "wave_minus_thermal": {
+     "point": 0.001125775269567381,
+     "ci": [
+      0.0007280793389703561,
+      0.0015625006958258456
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.003006299770022651,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0030144941790934787,
+    "wave_minus_thermal": {
+     "point": 0.0011879342043241775,
+     "ci": [
+      0.0007776379144617891,
+      0.0016271089279473413
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 8,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.0031380927638394603,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0031477279434567423,
+    "wave_minus_thermal": {
+     "point": 0.0013197271981409866,
+     "ci": [
+      0.0008857317425518903,
+      0.0018022857618768652
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.003402272203769318,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.003400169811011925,
+    "wave_minus_thermal": {
+     "point": 0.0015839066380708446,
+     "ci": [
+      0.0010697516250734106,
+      0.002139941324903781
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 16,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.0034583702796650343,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.00347329078498311,
+    "wave_minus_thermal": {
+     "point": 0.0016400047139665604,
+     "ci": [
+      0.0011889077087377474,
+      0.002139934870423834
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.004720310964875443,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.004645482719119971,
+    "wave_minus_thermal": {
+     "point": 0.002901945399176969,
+     "ci": [
+      0.0021007502332087598,
+      0.003760990167538245
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 32,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.004505213921416752,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.004512386864452485,
+    "wave_minus_thermal": {
+     "point": 0.002686848355718278,
+     "ci": [
+      0.0021033698703466688,
+      0.003323884203682044
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.008859728935231442,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.008572497770164276,
+    "wave_minus_thermal": {
+     "point": 0.007041363369532969,
+     "ci": [
+      0.005518281379309662,
+      0.008663753459907103
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0,
+   "lambda_W": 64,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.0060728526890381175,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.0060808384729950735,
+    "wave_minus_thermal": {
+     "point": 0.0042544871233396436,
+     "ci": [
+      0.0034411400454292035,
+      0.005108299069213422
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001818365565698474,
+    "regret_wave": 0.024082546150632364,
+    "regret_thermal_uncapped": 0.0018130757633462477,
+    "regret_wave_uncapped": 0.023815589964571678,
+    "wave_minus_thermal": {
+     "point": 0.02226418058493389,
+     "ci": [
+      0.01827549338060868,
+      0.02678345437668739
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 0,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.0010189631514923925,
+     "ci": [
+      0.0006157904368576817,
+      0.001471890680961325
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.001042144773529249,
+     "ci": [
+      0.000636768710427449,
+      0.0014866140164548716
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 0.25,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.002878819197932203,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.0028833090555139365,
+    "wave_minus_thermal": {
+     "point": 0.0010218714068793685,
+     "ci": [
+      0.0006189688598424076,
+      0.0014731066280874508
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.0028779861493308297,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.0028827280926131977,
+    "wave_minus_thermal": {
+     "point": 0.0010442199803148524,
+     "ci": [
+      0.0006381135697255268,
+      0.0014881574543370419
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 0.5,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.002882402227276909,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.0028887915041321283,
+    "wave_minus_thermal": {
+     "point": 0.0010254544362240745,
+     "ci": [
+      0.0006224262326349222,
+      0.0014785478301727322
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.002880527505988968,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.0028868600532946163,
+    "wave_minus_thermal": {
+     "point": 0.0010467613369729907,
+     "ci": [
+      0.0006384053189298404,
+      0.001491698532325204
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 1,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.002891654663992013,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.002899623610066708,
+    "wave_minus_thermal": {
+     "point": 0.0010347068729391787,
+     "ci": [
+      0.0006328321139688885,
+      0.0014876373531053024
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.002893991716749337,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.0029019311885687964,
+    "wave_minus_thermal": {
+     "point": 0.0010602255477333595,
+     "ci": [
+      0.0006519475574823151,
+      0.0015032612238134054
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 2,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.002912564512843404,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.002920208036144596,
+    "wave_minus_thermal": {
+     "point": 0.0010556167217905695,
+     "ci": [
+      0.0006488503406618111,
+      0.00151461913324085
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.002920469416002078,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.0029293719510547554,
+    "wave_minus_thermal": {
+     "point": 0.0010867032469861005,
+     "ci": [
+      0.0006729921562264829,
+      0.0015388992093100606
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 4,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.002944140835265855,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.0029549265501239226,
+    "wave_minus_thermal": {
+     "point": 0.0010871930442130204,
+     "ci": [
+      0.000687076162311072,
+      0.0015376179576917868
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.003006299770022651,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.0030144941790934787,
+    "wave_minus_thermal": {
+     "point": 0.0011725336010066736,
+     "ci": [
+      0.0007485093124745283,
+      0.0016270859556284537
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 8,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.0031380927638394603,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.0031477279434567423,
+    "wave_minus_thermal": {
+     "point": 0.0012811449727866261,
+     "ci": [
+      0.0008387083451841965,
+      0.00177444817265873
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.003402272203769318,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.003400169811011925,
+    "wave_minus_thermal": {
+     "point": 0.0015685060347533405,
+     "ci": [
+      0.0010433115717351934,
+      0.002132356970964967
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 16,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.0034583702796650343,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.00347329078498311,
+    "wave_minus_thermal": {
+     "point": 0.0016014224886121999,
+     "ci": [
+      0.001126290582215217,
+      0.002123816160923927
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.004720310964875443,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.004645482719119971,
+    "wave_minus_thermal": {
+     "point": 0.0028865447958594656,
+     "ci": [
+      0.0020693744248853306,
+      0.0037617807057324657
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 32,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.004505213921416752,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.004512386864452485,
+    "wave_minus_thermal": {
+     "point": 0.002648266130363918,
+     "ci": [
+      0.00202939196993994,
+      0.003319117262550044
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.008859728935231442,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.008572497770164276,
+    "wave_minus_thermal": {
+     "point": 0.0070259627662154645,
+     "ci": [
+      0.005488051075607289,
+      0.008655376588845107
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.25,
+   "lambda_W": 64,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.001856947791052834,
+    "regret_wave": 0.0060728526890381175,
+    "regret_thermal_uncapped": 0.0018524586689026943,
+    "regret_wave_uncapped": 0.0060808384729950735,
+    "wave_minus_thermal": {
+     "point": 0.004215904897985283,
+     "ci": [
+      0.003364642471762675,
+      0.005111006933289021
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018337661690159773,
+    "regret_wave": 0.024082546150632364,
+    "regret_thermal_uncapped": 0.0018280947842491053,
+    "regret_wave_uncapped": 0.023815589964571678,
+    "wave_minus_thermal": {
+     "point": 0.02224877998161639,
+     "ci": [
+      0.018252663233878308,
+      0.02677842226177333
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 0,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.0009857484499422992,
+     "ci": [
+      0.0005718800890517749,
+      0.0014369449921084448
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.0009854544124114329,
+     "ci": [
+      0.0005706140271584749,
+      0.0014355216474299277
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 0.25,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.002878819197932203,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.0028833090555139365,
+    "wave_minus_thermal": {
+     "point": 0.000988656705329275,
+     "ci": [
+      0.0005754354665229707,
+      0.001439404406067438
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.0028779861493308297,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.0028827280926131977,
+    "wave_minus_thermal": {
+     "point": 0.000987529619197036,
+     "ci": [
+      0.0005708931729438344,
+      0.0014364901524204496
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 0.5,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.002882402227276909,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.0028887915041321283,
+    "wave_minus_thermal": {
+     "point": 0.0009922397346739814,
+     "ci": [
+      0.0005774680088681494,
+      0.0014450286972459815
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.002880527505988968,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.0028868600532946163,
+    "wave_minus_thermal": {
+     "point": 0.0009900709758551745,
+     "ci": [
+      0.000572876674922266,
+      0.0014420037781022973
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 1,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.002891654663992013,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.002899623610066708,
+    "wave_minus_thermal": {
+     "point": 0.0010014921713890853,
+     "ci": [
+      0.0005866303664509378,
+      0.0014519022466214912
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.002893991716749337,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.0029019311885687964,
+    "wave_minus_thermal": {
+     "point": 0.0010035351866155436,
+     "ci": [
+      0.000585226729103581,
+      0.0014525409392168434
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 2,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.002912564512843404,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.002920208036144596,
+    "wave_minus_thermal": {
+     "point": 0.0010224020202404761,
+     "ci": [
+      0.0006044777263326947,
+      0.0014820747561332512
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.002920469416002078,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.0029293719510547554,
+    "wave_minus_thermal": {
+     "point": 0.0010300128858682844,
+     "ci": [
+      0.0006053643614582911,
+      0.001488768184142328
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 4,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.002944140835265855,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.0029549265501239226,
+    "wave_minus_thermal": {
+     "point": 0.0010539783426629274,
+     "ci": [
+      0.0006404842941873772,
+      0.0015051462409700765
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.003006299770022651,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.0030144941790934787,
+    "wave_minus_thermal": {
+     "point": 0.0011158432398888575,
+     "ci": [
+      0.0006807911239074656,
+      0.0015753518274035168
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 8,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.0031380927638394603,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.0031477279434567423,
+    "wave_minus_thermal": {
+     "point": 0.001247930271236533,
+     "ci": [
+      0.0007983679875511325,
+      0.0017517577751415931
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.003402272203769318,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.003400169811011925,
+    "wave_minus_thermal": {
+     "point": 0.0015118156736355247,
+     "ci": [
+      0.0009780206312923652,
+      0.0020842344781538424
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 16,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.0034583702796650343,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.00347329078498311,
+    "wave_minus_thermal": {
+     "point": 0.0015682077870621067,
+     "ci": [
+      0.00108323245211083,
+      0.0020922048718551704
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.004720310964875443,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.004645482719119971,
+    "wave_minus_thermal": {
+     "point": 0.002829854434741649,
+     "ci": [
+      0.0020105007217166263,
+      0.0037124008296338913
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 32,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.004505213921416752,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.004512386864452485,
+    "wave_minus_thermal": {
+     "point": 0.0026150514288138245,
+     "ci": [
+      0.0019992336659052936,
+      0.003288623450279841
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.008859728935231442,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.008572497770164276,
+    "wave_minus_thermal": {
+     "point": 0.006969272405097648,
+     "ci": [
+      0.0054301694858466245,
+      0.00860507283540497
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 0.5,
+   "lambda_W": 64,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018901624926029276,
+    "regret_wave": 0.0060728526890381175,
+    "regret_thermal_uncapped": 0.0018809341478817339,
+    "regret_wave_uncapped": 0.0060808384729950735,
+    "wave_minus_thermal": {
+     "point": 0.004182690196435189,
+     "ci": [
+      0.0033209233963215827,
+      0.0050933442580656345
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0018904565301337936,
+    "regret_wave": 0.024082546150632364,
+    "regret_thermal_uncapped": 0.0018778602363813109,
+    "regret_wave_uncapped": 0.023815589964571678,
+    "wave_minus_thermal": {
+     "point": 0.02219208962049857,
+     "ci": [
+      0.01817798309448611,
+      0.026712124915142164
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 0,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.0007096683332044738,
+     "ci": [
+      0.0003150567303773107,
+      0.001168962708750204
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 0.0006688233404266893,
+     "ci": [
+      0.0002575491870181274,
+      0.0011159464330942118
+     ],
+     "p_le0": 0.00039996000399960006
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 0.25,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.002878819197932203,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.0028833090555139365,
+    "wave_minus_thermal": {
+     "point": 0.0007125765885914497,
+     "ci": [
+      0.00031847078956371975,
+      0.0011708995316580782
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.0028779861493308297,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.0028827280926131977,
+    "wave_minus_thermal": {
+     "point": 0.0006708985472122924,
+     "ci": [
+      0.0002573040804511456,
+      0.0011150484257172139
+     ],
+     "p_le0": 0.0004999500049995
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 0.5,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.002882402227276909,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.0028887915041321283,
+    "wave_minus_thermal": {
+     "point": 0.0007161596179361559,
+     "ci": [
+      0.000320419225732468,
+      0.0011749389348872197
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.002880527505988968,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.0028868600532946163,
+    "wave_minus_thermal": {
+     "point": 0.0006734399038704309,
+     "ci": [
+      0.00025862353917829276,
+      0.0011182826644128374
+     ],
+     "p_le0": 0.0004999500049995
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 1,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.002891654663992013,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.002899623610066708,
+    "wave_minus_thermal": {
+     "point": 0.00072541205465126,
+     "ci": [
+      0.00033050989838774814,
+      0.0011828726238502945
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.002893991716749337,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.0029019311885687964,
+    "wave_minus_thermal": {
+     "point": 0.0006869041146307997,
+     "ci": [
+      0.0002709789896291367,
+      0.0011272643495831925
+     ],
+     "p_le0": 0.0004999500049995
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 2,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.002912564512843404,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.002920208036144596,
+    "wave_minus_thermal": {
+     "point": 0.0007463219035026507,
+     "ci": [
+      0.0003436684705922641,
+      0.0012153372833363359
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.002920469416002078,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.0029293719510547554,
+    "wave_minus_thermal": {
+     "point": 0.0007133818138835406,
+     "ci": [
+      0.0002915251916804593,
+      0.0011663769452655579
+     ],
+     "p_le0": 0.00029997000299970003
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 4,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.002944140835265855,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.0029549265501239226,
+    "wave_minus_thermal": {
+     "point": 0.0007778982259251019,
+     "ci": [
+      0.0003860877026716809,
+      0.0012280601988684308
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.003006299770022651,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.0030144941790934787,
+    "wave_minus_thermal": {
+     "point": 0.0007992121679041138,
+     "ci": [
+      0.0003712951055021056,
+      0.0012503898924418298
+     ],
+     "p_le0": 0.00019998000199980003
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 8,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.0031380927638394603,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.0031477279434567423,
+    "wave_minus_thermal": {
+     "point": 0.0009718501544987077,
+     "ci": [
+      0.0005483228000095319,
+      0.0014658357785092297
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.003402272203769318,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.003400169811011925,
+    "wave_minus_thermal": {
+     "point": 0.001195184601650781,
+     "ci": [
+      0.0006680689649744454,
+      0.0017634368832126542
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 16,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.0034583702796650343,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.00347329078498311,
+    "wave_minus_thermal": {
+     "point": 0.0012921276703242812,
+     "ci": [
+      0.0008295068707685146,
+      0.0018066200749644462
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.004720310964875443,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.004645482719119971,
+    "wave_minus_thermal": {
+     "point": 0.0025132233627569054,
+     "ci": [
+      0.0017052772588639104,
+      0.0033815537720047625
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 32,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.004505213921416752,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.004512386864452485,
+    "wave_minus_thermal": {
+     "point": 0.0023389713120759996,
+     "ci": [
+      0.0017376475240460782,
+      0.0030100630654779532
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.008859728935231442,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.008572497770164276,
+    "wave_minus_thermal": {
+     "point": 0.006652641333112904,
+     "ci": [
+      0.005117593901202061,
+      0.008277466440047575
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 1,
+   "lambda_W": 64,
+   "matched": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002166242609340753,
+    "regret_wave": 0.0060728526890381175,
+    "regret_thermal_uncapped": 0.0021626219249986493,
+    "regret_wave_uncapped": 0.0060808384729950735,
+    "wave_minus_thermal": {
+     "point": 0.003906610079697365,
+     "ci": [
+      0.0030443030974624504,
+      0.004808705360031588
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_hgb_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0022070876021185373,
+    "regret_wave": 0.024082546150632364,
+    "regret_thermal_uncapped": 0.0021915705672000386,
+    "regret_wave_uncapped": 0.023815589964571678,
+    "wave_minus_thermal": {
+     "point": 0.021875458548513825,
+     "ci": [
+      0.017890042467821266,
+      0.026377581515929657
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 0,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": 2.9809693601688893e-05,
+     "ci": [
+      -0.0004853483577626535,
+      0.0005707408239809097
+     ],
+     "p_le0": 0.45945405459454053
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": -7.907700081180524e-05,
+     "ci": [
+      -0.0006038958742186466,
+      0.00046215086732984877
+     ],
+     "p_le0": 0.6219378062193781
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 0.25,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.002878819197932203,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.0028833090555139365,
+    "wave_minus_thermal": {
+     "point": 3.271794898866482e-05,
+     "ci": [
+      -0.000480941002764245,
+      0.0005712429893481384
+     ],
+     "p_le0": 0.45345465453454653
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.0028779861493308297,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.0028827280926131977,
+    "wave_minus_thermal": {
+     "point": -7.700179402620205e-05,
+     "ci": [
+      -0.0006035250679825866,
+      0.0004625490449663169
+     ],
+     "p_le0": 0.6180381961803819
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 0.5,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.002882402227276909,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.0028887915041321283,
+    "wave_minus_thermal": {
+     "point": 3.6300978333371036e-05,
+     "ci": [
+      -0.00047860172167015353,
+      0.0005768124302558313
+     ],
+     "p_le0": 0.44915508449155084
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.002880527505988968,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.0028868600532946163,
+    "wave_minus_thermal": {
+     "point": -7.446043736806358e-05,
+     "ci": [
+      -0.0006010093081705058,
+      0.0004678832354997689
+     ],
+     "p_le0": 0.6143385661433857
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 1,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.002891654663992013,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.002899623610066708,
+    "wave_minus_thermal": {
+     "point": 4.555341504847515e-05,
+     "ci": [
+      -0.00046525137807766214,
+      0.000582586728233365
+     ],
+     "p_le0": 0.43415658434156584
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.002893991716749337,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.0029019311885687964,
+    "wave_minus_thermal": {
+     "point": -6.099622660769466e-05,
+     "ci": [
+      -0.0005893376185455256,
+      0.0004805624666974512
+     ],
+     "p_le0": 0.5895410458954105
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 2,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.002912564512843404,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.002920208036144596,
+    "wave_minus_thermal": {
+     "point": 6.64632638998659e-05,
+     "ci": [
+      -0.00044498320707228557,
+      0.0006133296353605192
+     ],
+     "p_le0": 0.4026597340265973
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.002920469416002078,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.0029293719510547554,
+    "wave_minus_thermal": {
+     "point": -3.451852735495381e-05,
+     "ci": [
+      -0.0005651916228737355,
+      0.0005130639484227887
+     ],
+     "p_le0": 0.5492450754924507
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 4,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.002944140835265855,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.0029549265501239226,
+    "wave_minus_thermal": {
+     "point": 9.803958632231707e-05,
+     "ci": [
+      -0.0004021213471555771,
+      0.0006265187474819979
+     ],
+     "p_le0": 0.3568643135686431
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.003006299770022651,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.0030144941790934787,
+    "wave_minus_thermal": {
+     "point": 5.131182666561932e-05,
+     "ci": [
+      -0.0004875108365387247,
+      0.0005985809619802304
+     ],
+     "p_le0": 0.42345765423457654
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 8,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.0031380927638394603,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.0031477279434567423,
+    "wave_minus_thermal": {
+     "point": 0.0002919915148959227,
+     "ci": [
+      -0.00022822617286630696,
+      0.0008461319625597399
+     ],
+     "p_le0": 0.144985501449855
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.003402272203769318,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.003400169811011925,
+    "wave_minus_thermal": {
+     "point": 0.0004472842604122864,
+     "ci": [
+      -0.0001651284465735532,
+      0.0010951903432042333
+     ],
+     "p_le0": 0.07889211078892111
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 16,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.0034583702796650343,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.00347329078498311,
+    "wave_minus_thermal": {
+     "point": 0.0006122690307214963,
+     "ci": [
+      9.802674276648233e-05,
+      0.0011612288543042665
+     ],
+     "p_le0": 0.008799120087991202
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.004720310964875443,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.004645482719119971,
+    "wave_minus_thermal": {
+     "point": 0.001765323021518411,
+     "ci": [
+      0.0009001144447335795,
+      0.00269717325918684
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 32,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.004505213921416752,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.004512386864452485,
+    "wave_minus_thermal": {
+     "point": 0.0016591126724732146,
+     "ci": [
+      0.0010228035924911357,
+      0.0023397918285862217
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.008859728935231442,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.008572497770164276,
+    "wave_minus_thermal": {
+     "point": 0.00590474099187441,
+     "ci": [
+      0.004335693695900386,
+      0.00755886852318955
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 2,
+   "lambda_W": 64,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.002846101248943538,
+    "regret_wave": 0.0060728526890381175,
+    "regret_thermal_uncapped": 0.0028404182468266506,
+    "regret_wave_uncapped": 0.0060808384729950735,
+    "wave_minus_thermal": {
+     "point": 0.0032267514400945796,
+     "ci": [
+      0.0024229129349075014,
+      0.004081212693526202
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0029549879433570314,
+    "regret_wave": 0.024082546150632364,
+    "regret_thermal_uncapped": 0.002932196155933786,
+    "regret_wave_uncapped": 0.023815589964571678,
+    "wave_minus_thermal": {
+     "point": 0.021127558207275333,
+     "ci": [
+      0.017097118637376826,
+      0.025687717738924542
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 0,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": -0.0011708612353324747,
+     "ci": [
+      -0.001975355384762935,
+      -0.0004380478314993629
+     ],
+     "p_le0": 0.9994000599940006
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.002875910942545227,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.0028800083934069944,
+    "wave_minus_thermal": {
+     "point": -0.002678213838287956,
+     "ci": [
+      -0.0039082559561942915,
+      -0.0016077261358876888
+     ],
+     "p_le0": 1.0
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 0.25,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.002878819197932203,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.0028833090555139365,
+    "wave_minus_thermal": {
+     "point": -0.0011679529799454988,
+     "ci": [
+      -0.0019721618218354353,
+      -0.00043665011608678294
+     ],
+     "p_le0": 0.9994000599940006
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.0028779861493308297,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.0028827280926131977,
+    "wave_minus_thermal": {
+     "point": -0.002676138631502352,
+     "ci": [
+      -0.003909548204135582,
+      -0.0016092500424671212
+     ],
+     "p_le0": 1.0
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 0.5,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.002882402227276909,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.0028887915041321283,
+    "wave_minus_thermal": {
+     "point": -0.0011643699506007925,
+     "ci": [
+      -0.001967845718882027,
+      -0.0004334464317150375
+     ],
+     "p_le0": 0.9993000699930007
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.002880527505988968,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.0028868600532946163,
+    "wave_minus_thermal": {
+     "point": -0.002673597274844214,
+     "ci": [
+      -0.003910167645888584,
+      -0.0016021310328788094
+     ],
+     "p_le0": 1.0
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 1,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.002891654663992013,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.002899623610066708,
+    "wave_minus_thermal": {
+     "point": -0.0011551175138856883,
+     "ci": [
+      -0.001957325704460648,
+      -0.0004251778176163383
+     ],
+     "p_le0": 0.9993000699930007
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.002893991716749337,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.0029019311885687964,
+    "wave_minus_thermal": {
+     "point": -0.002660133064083845,
+     "ci": [
+      -0.0039012764444439777,
+      -0.0015892977494746975
+     ],
+     "p_le0": 1.0
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 2,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.002912564512843404,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.002920208036144596,
+    "wave_minus_thermal": {
+     "point": -0.0011342076650342977,
+     "ci": [
+      -0.0019338110412446046,
+      -0.00040444685728325863
+     ],
+     "p_le0": 0.9992000799920008
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.002920469416002078,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.0029293719510547554,
+    "wave_minus_thermal": {
+     "point": -0.002633655364831104,
+     "ci": [
+      -0.003875877066363933,
+      -0.0015614949568146857
+     ],
+     "p_le0": 1.0
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 4,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.002944140835265855,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.0029549265501239226,
+    "wave_minus_thermal": {
+     "point": -0.0011026313426118466,
+     "ci": [
+      -0.0018924567472883632,
+      -0.000385788399200946
+     ],
+     "p_le0": 0.9992000799920008
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.003006299770022651,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.0030144941790934787,
+    "wave_minus_thermal": {
+     "point": -0.0025478250108105314,
+     "ci": [
+      -0.0038010594372805784,
+      -0.0014738408686670707
+     ],
+     "p_le0": 1.0
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 8,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.0031380927638394603,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.0031477279434567423,
+    "wave_minus_thermal": {
+     "point": -0.0009086794140382409,
+     "ci": [
+      -0.0016988997887883589,
+      -0.00018340794912253029
+     ],
+     "p_le0": 0.9941005899410059
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.003402272203769318,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.003400169811011925,
+    "wave_minus_thermal": {
+     "point": -0.0021518525770638647,
+     "ci": [
+      -0.0034538984310980634,
+      -0.0010168078470005099
+     ],
+     "p_le0": 1.0
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 16,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.0034583702796650343,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.00347329078498311,
+    "wave_minus_thermal": {
+     "point": -0.0005884018982126674,
+     "ci": [
+      -0.0013549111889896524,
+      0.00011997673664861703
+     ],
+     "p_le0": 0.9448055194480552
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.004720310964875443,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.004645482719119971,
+    "wave_minus_thermal": {
+     "point": -0.0008338138159577397,
+     "ci": [
+      -0.0022870308542117727,
+      0.0004884895695975001
+     ],
+     "p_le0": 0.8825117488251175
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 32,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.004505213921416752,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.004512386864452485,
+    "wave_minus_thermal": {
+     "point": 0.00045844174353905083,
+     "ci": [
+      -0.0003760801759467962,
+      0.0012634683581269556
+     ],
+     "p_le0": 0.13538646135386462
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.008859728935231442,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.008572497770164276,
+    "wave_minus_thermal": {
+     "point": 0.003305604154398259,
+     "ci": [
+      0.0013412000317234868,
+      0.005221327373582726
+     ],
+     "p_le0": 0.0004999500049995
+    }
+   }
+  },
+  {
+   "lambda_T": 4,
+   "lambda_W": 64,
+   "matched": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.004046772177877702,
+    "regret_wave": 0.0060728526890381175,
+    "regret_thermal_uncapped": 0.004038495194387065,
+    "regret_wave_uncapped": 0.0060808384729950735,
+    "wave_minus_thermal": {
+     "point": 0.0020260805111604156,
+     "ci": [
+      0.001117995604557403,
+      0.002972059725786589
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   },
+   "train_clean": {
+    "best_thermal": "ML_ridge_thermal",
+    "best_wave": "ML_ridge_wave",
+    "regret_thermal": 0.0055541247808331825,
+    "regret_wave": 0.024082546150632364,
+    "regret_thermal_uncapped": 0.005498566108671394,
+    "regret_wave_uncapped": 0.023815589964571678,
+    "wave_minus_thermal": {
+     "point": 0.018528421369799184,
+     "ci": [
+      0.014316584473808038,
+      0.02321756431945966
+     ],
+     "p_le0": 9.999000099990002e-05
+    }
+   }
+  }
+ ],
+ "crossover_lambda_W_by_lambda_T": {
+  "0": null,
+  "0.25": null,
+  "0.5": null,
+  "1": null,
+  "2": null,
+  "4": 0
+ },
+ "wave_tolerance_lambda_W_by_lambda_T": {
+  "0": null,
+  "0.25": null,
+  "0.5": null,
+  "1": null,
+  "2": null,
+  "4": 16
+ },
+ "probe_capped_share": {
+  "fit": 0.00828125,
+  "test_id": 0.006
+ },
+ "lambda_W_stress": [
+  8,
+  16,
+  32,
+  64
+ ],
+ "link_sweep": [
+  {
+   "lambda_link": 0,
+   "ML_hgb_state_obs": 0.001975498636029455
+  },
+  {
+   "lambda_link": 0.25,
+   "ML_hgb_state_obs": 0.0019638805480165274
+  },
+  {
+   "lambda_link": 0.5,
+   "ML_hgb_state_obs": 0.001958117778347515
+  },
+  {
+   "lambda_link": 1,
+   "ML_hgb_state_obs": 0.0019552414209743564
+  },
+  {
+   "lambda_link": 2,
+   "ML_hgb_state_obs": 0.001960382737552783
+  },
+  {
+   "lambda_link": 4,
+   "ML_hgb_state_obs": 0.002100417722304231
+  }
+ ],
+ "tj_rth_ablation": [
+  {
+   "lambda_T": 2,
+   "regret_with": 0.00301848563781404,
+   "regret_without": 0.0030449894407354027,
+   "without_minus_with": {
+    "point": 2.6503802921361925e-05,
+    "ci": [
+     -0.00010276303143188821,
+     0.00015054519790506265
+    ],
+    "p_le0": 0.34066593340665935
+   }
+  },
+  {
+   "lambda_T": 4,
+   "regret_with": 0.004518439432236368,
+   "regret_without": 0.004507608144183087,
+   "without_minus_with": {
+    "point": -1.0831288053281748e-05,
+    "ci": [
+     -0.00019555588755522398,
+     0.00019647997881593797
+    ],
+    "p_le0": 0.5565443455654434
+   }
+  }
+ ],
+ "holdout_units": [
+  147,
+  82,
+  41,
+  10,
+  2,
+  91,
+  146,
+  35,
+  138,
+  134,
+  86,
+  5,
+  120,
+  60,
+  79,
+  40,
+  127,
+  0,
+  132,
+  122,
+  155,
+  101,
+  115,
+  112,
+  90,
+  71,
+  24,
+  28,
+  105,
+  109,
+  85,
+  66
+ ]
+}

@@ -1,0 +1,146 @@
+{
+  "_comment": "DC-bias benchmark simulator configuration. Every leaf parameter has value, units, source_doi and verification in {fulltext, datasheet, derived, abstract, assumed, swept-assumption, design}. 'design' = a simulation-design choice, not a physical claim. Departures from the plain textbook model are listed in _design_notes.",
+  "_design_notes": [
+    "The ID set is a two-stratum mixture: half of each unit's states have T_hs in a base stratum [298, 365) K and half in a foldback stratum [365, 400] K, so the driver ceiling binds where the equivalence is tested. OOD-T is (400, 415] K, still on the derating slope (f_min is reached at 416.3 K).",
+    "led.kappa_tilde is the dimensionless kappa * I_rated; monotonicity of the LED transfer curve requires 2 * kappa_tilde < 1.",
+    "sweeps.led.kappa_tilde tops out at 0.42, not 0.45: with the 15 % unit spread, 0.45 gives units with kappa_tilde > 0.5, which the monotonicity check rejects.",
+    "The oracle bias is refined by +/-10 points at 0.05 % steps, so the refinement covers the whole coarse cell on either side of the coarse argmin.",
+    "Self-heating is solved in closed form: P_diss is affine in Tj, so the fixed point is exact. Non-existence (1 - Rth * dP/dTj <= 0, thermal runaway) raises.",
+    "Baseline B2 (Zhang and Zhang 2014) is the midpoint of the clipping window [0, C_hat], the exact optimum of that paper's stated MSE objective. Table I of that paper is not reproducible (see dcbias/zhang_check.py). B2 therefore coincides with B3.",
+    "R_label is 512: the common-random-numbers gate failed at 256 (RMS within-state label SD above 0.003 I_rated).",
+    "BER uses the exact Gray square-QAM formula derived from the decision regions of the implemented bit map. A nearest-neighbour approximation under-read counted bits by up to 0.09 decade at BER >= 1e-2 and failed the counted-bit gate (94.8 % < 95 %).",
+    "Oracle and label curves are interpolated with PCHIP, not linearly: linear interpolation failed the 0.002-decade interpolation gate (max 0.0047).",
+    "Label L2 uses the HD-FEC threshold 4.5e-3 (Chang 2010, Table 1); 3.8e-3 is kept as a sensitivity column (L2_38).",
+    "The LED lower clip is i_min = 0.10 I_rated (Tsonev 2013, Table I; normalising by I_rated is derived) at every clip site, in the bias grid and in the probe. It is swept over {0, 0.05}; the Tsonev cubic is a sensitivity row (led.model).",
+    "Tj_Rth_hat carries (lambda_T - 1) * u_ntc_offset without noise at lambda_T > 1; it is kept, with a with/without-Tj_Rth_hat ablation in results_sensing.json. L2_38 is reported in results_main.json. The B7 selection score is reported with its row count and unit-bootstrap SE; the C1 comparator is whichever non-ML candidate wins selection, as coded.",
+    "States whose junction temperature at the L1 bias exceeds led.Tj_max_K get tj_ok = false and are excluded from evaluation; their share is reported in provenance.",
+    "Tj_Rth_hat uses an estimated dissipated power (measured P_elec minus nominal optical power at the NTC temperature), not the true P_diss. The forward-voltage Tj method assumes a per-unit calibrated K-factor whose residual is epsK, so no K_V spread term is added.",
+    "C2 is an intersection-union test (all three OOD CI lower bounds > 0) with no multiplicity adjustment.",
+    "SNR_ref is the linear-LED reference SNR (receiver noise = (eta0 sigma_I)^2 / SNR_ref). OOD-SNR is defined on SNR_ref, an input fixed before simulation. Realised SINR at b_p and at L1 is reported per row because the link is distortion-limited.",
+    "B6b tables include the M axis for both labels and use 24 T points over the 298-415 K span. B6a for L1 stays 4-D (M omitted); discrete LUT columns such as M get one cell per value."
+  ],
+  "seed": {"value": 20261014, "units": "-", "source_doi": null, "verification": "design"},
+  "ofdm": {
+    "N": {"value": 512, "units": "samples", "source_doi": null, "verification": "design"},
+    "Nu": {"value": 255, "units": "subcarriers", "source_doi": null, "verification": "design", "note": "N/2 - 1; X[0] = X[N/2] = 0"},
+    "grid_step_frac": {"value": 0.005, "units": "I_rated", "source_doi": null, "verification": "design"},
+    "R_label": {"value": 512, "units": "OFDM symbols", "source_doi": null, "verification": "design", "note": "raised from 256 to 512 because the common-random-numbers gate failed at 256 (RMS within-state label SD 0.00307 I_rated > 0.003; mean regret 0.0002 decades passed)"},
+    "R_oracle": {"value": 1024, "units": "OFDM symbols", "source_doi": null, "verification": "design"},
+    "R_probe": {"value": 16, "units": "OFDM symbols", "source_doi": null, "verification": "design"},
+    "refine_half_points": {"value": 10, "units": "points", "source_doi": null, "verification": "design"},
+    "refine_step_frac": {"value": 0.0005, "units": "I_rated", "source_doi": null, "verification": "design"},
+    "quad_nodes": {"value": 1601, "units": "-", "source_doi": null, "verification": "design", "note": "uniform-node Gaussian quadrature on [-span, span]; accuracy checked in tests"},
+    "quad_span": {"value": 8.0, "units": "sigma", "source_doi": null, "verification": "design"},
+    "bias_chunk": {"value": 16, "units": "biases per vectorised batch", "source_doi": null, "verification": "design"}
+  },
+  "led": {
+    "eta0_nom": {"value": 1.0, "units": "W/A", "source_doi": null, "verification": "assumed", "note": "radiant efficiency scale; enters only self-heating and the noise reference"},
+    "kappa_tilde": {"value": 0.30, "units": "-", "source_doi": "10.1109/JLT.2013.2278675", "verification": "derived", "note": "Tsonev 2013 Table I OSRAM cubic -> 0.36; Cree XP-G3 rel. flux vs I -> 0.27"},
+    "delta": {"value": 0.0017, "units": "1/K", "source_doi": null, "verification": "datasheet", "note": "Cree XP-G3 110% (25 C) -> 87% (150 C); Lumileds Rebel ES 0.0019/K"},
+    "model": {"value": "quadratic", "units": "-", "source_doi": null, "verification": "design", "note": "quadratic (nominal) or tsonev_cubic (sensitivity row); the cubic is scaled to the quadratic's small-signal slope at I_rated/2 and the unit kappa_tilde spread does not apply to it"},
+    "i_min_frac": {"value": 0.10, "units": "I_rated", "source_doi": "10.1109/JLT.2013.2278675", "verification": "fulltext", "note": "Tsonev 2013 Table I: p(i) on [0.1, 1] A, constant outside (= current clipped at 0.1 A); minimum DCO bias 0.19 A, p. 3073. Normalising by I_rated is derived"},
+    "tsonev_cubic": {"value": [0.2855, -1.0886, 2.0565, -0.0003], "units": "W vs A, highest power first", "source_doi": "10.1109/JLT.2013.2278675", "verification": "fulltext", "note": "Tsonev 2013 Table I OSRAM OSTAR on [0.1, 1] A; evaluated at i / I_rated"},
+    "Tj_max_K": {"value": 423.0, "units": "K", "source_doi": null, "verification": "assumed", "note": "150 C maximum junction temperature as listed in the Cree XP-G3 and Lumileds Rebel ES datasheets (value not independently re-checked). Inert by design (max Tj at L1 about 417 K): provenance reports tj_margin_min_K_by_split, so it is not an active safety screen."},
+    "f3dB_over_B": {"value": 1.0, "units": "B", "source_doi": null, "verification": "swept-assumption", "note": "first-order LED low-pass; null = flat"}
+  },
+  "thermal": {
+    "Rth": {"value": 6.0, "units": "K/W", "source_doi": null, "verification": "datasheet", "note": "junction-to-pad: XP-G3 1.1, XP-E2 5.8, Rebel ES 6, Rebel 10"},
+    "V0": {"value": 2.8, "units": "V", "source_doi": null, "verification": "assumed"},
+    "Rs": {"value": 0.35, "units": "ohm", "source_doi": null, "verification": "assumed"},
+    "K_V": {"value": -0.002, "units": "V/K", "source_doi": null, "verification": "datasheet", "note": "XP-E2 -1.5 mV/K; Rebel -2 to -4 mV/K"}
+  },
+  "unit_spread": {
+    "_comment": "Latent per-unit parameters: value * U[1 - w, 1 + w] unless a range is given. Drawn once per unit, never observed.",
+    "eta0": {"value": 0.10, "units": "relative", "source_doi": null, "verification": "design"},
+    "kappa_tilde": {"value": 0.15, "units": "relative", "source_doi": null, "verification": "derived", "note": "sourced kappa_tilde range 0.27-0.36"},
+    "delta": {"value": 0.40, "units": "relative", "source_doi": null, "verification": "swept-assumption"},
+    "Rth": {"value": 0.25, "units": "relative", "source_doi": null, "verification": "swept-assumption"},
+    "V0": {"value": 0.05, "units": "relative", "source_doi": null, "verification": "assumed"},
+    "Rs": {"value": 0.30, "units": "relative", "source_doi": null, "verification": "assumed"},
+    "K_V_range": {"value": [-0.004, -0.0015], "units": "V/K", "source_doi": null, "verification": "datasheet"},
+    "ntc_offset_sd": {"value": 1.0, "units": "K", "source_doi": null, "verification": "assumed", "note": "thermistor tolerance; shifts the driver's own foldback reading"},
+    "epsK_sd": {"value": 0.05, "units": "relative", "source_doi": null, "verification": "assumed", "note": "per-unit K-factor calibration error of the forward-voltage Tj method"}
+  },
+  "driver": {
+    "knee_K": {"value": 358.0, "units": "K", "source_doi": null, "verification": "fulltext", "note": "board NTC: Allegro AN296297 80/85 C; TI SNIA037 100/115 C"},
+    "slope_per_K": {"value": 0.012, "units": "I_rated/K", "source_doi": null, "verification": "derived", "note": "TI 0.0024-0.0133; Allegro 0.0111-0.0154"},
+    "f_min": {"value": 0.3, "units": "I_rated", "source_doi": null, "verification": "swept-assumption"}
+  },
+  "noise": {
+    "rho": {"value": 0.01, "units": "-", "source_doi": "10.1109/TCE.2004.1277847", "verification": "derived", "note": "Komine 2004 IV: signal 1e4-1e5 vs ambient 1e7-1e8 photons/bit"}
+  },
+  "ber": {
+    "fec_hd": {"value": 0.0045, "units": "BER", "source_doi": "10.1109/MCOM.2010.5434378", "verification": "fulltext", "note": "Chang 2010 Table 1"},
+    "fec_alt": {"value": 0.0038, "units": "BER", "source_doi": null, "verification": "assumed", "note": "uncited sensitivity column only"},
+    "regret_floor": {"value": 1e-9, "units": "BER", "source_doi": null, "verification": "design"},
+    "regret_floor_sensitivity": {"value": [1e-6, 1e-12], "units": "BER", "source_doi": null, "verification": "design"}
+  },
+  "states": {
+    "I_rated_A": {"value": [0.7, 1.0], "units": "A", "source_doi": null, "verification": "design"},
+    "sigma_frac": {"value": [0.08, 0.20], "units": "I_rated", "source_doi": null, "verification": "design"},
+    "T_hs_K": {"value": [298.0, 415.0], "units": "K", "source_doi": null, "verification": "design", "note": "overall span: base stratum, foldback stratum, OOD-T"},
+    "SNR_ref_dB": {"value": [5.0, 40.0], "units": "dB", "source_doi": null, "verification": "design", "note": "linear-LED reference SNR: AC electrical SNR at b = I_rated/2, T0, no clipping, kappa = 0 "},
+    "M": {"value": [4, 16, 64], "units": "-", "source_doi": null, "verification": "design"},
+    "probe_frac": {"value": [0.25, 0.5], "units": "I_rated", "source_doi": null, "verification": "design", "note": "current operating bias b_p, independent of the state; capped at 0.9 I_max"}
+  },
+  "id_region": {
+    "T_hs_max_K": {"value": 400.0, "units": "K", "source_doi": null, "verification": "design"},
+    "stratum_T_hs_K": {"value": [365.0, 400.0], "units": "K", "source_doi": null, "verification": "design", "note": "foldback-active stratum (the ceiling binds in 52-65 % of its states); the base stratum is [states.T_hs_K[0], 365)"},
+    "stratum_share": {"value": 0.5, "units": "share of each unit's states", "source_doi": null, "verification": "design", "note": "odd-indexed states of every non-OOD-T unit are in the foldback stratum"},
+    "SNR_max_dB": {"value": 32.0, "units": "dB", "source_doi": null, "verification": "design"},
+    "sigma_frac_max": {"value": 0.16, "units": "I_rated", "source_doi": null, "verification": "design"}
+  },
+  "design": {
+    "n_units_id": {"value": 200, "units": "units", "source_doi": null, "verification": "design"},
+    "n_train_units": {"value": 160, "units": "units", "source_doi": null, "verification": "design"},
+    "n_units_ood": {"value": 15, "units": "units per OOD set", "source_doi": null, "verification": "design"},
+    "states_per_unit": {"value": 100, "units": "states", "source_doi": null, "verification": "design"},
+    "unit_spread_on": {"value": true, "units": "-", "source_doi": null, "verification": "design", "note": "false = regime A control (nominal device)"}
+  },
+  "sensing": {
+    "sigma_T_ntc": {"value": 1.0, "units": "K", "source_doi": null, "verification": "assumed"},
+    "sigma_V": {"value": 0.002, "units": "V", "source_doi": null, "verification": "assumed"},
+    "K_V_nom": {"value": -0.002, "units": "V/K", "source_doi": null, "verification": "datasheet"},
+    "adc_bits": {"value": 10, "units": "bit", "source_doi": null, "verification": "swept-assumption"},
+    "adc_fs_frac": {"value": 1.2, "units": "I_rated", "source_doi": null, "verification": "design"},
+    "window_symbols": {"value": 4, "units": "OFDM symbols", "source_doi": null, "verification": "design"},
+    "sigma_a_lsb": {"value": 0.5, "units": "LSB", "source_doi": null, "verification": "swept-assumption"},
+    "sigma_P_rel": {"value": 0.01, "units": "relative", "source_doi": null, "verification": "swept-assumption", "note": "electrical-power measurement error (driver V and I sense) in the Rth-model Tj estimate"},
+    "snr_sd_dB": {"value": 0.5, "units": "dB", "source_doi": null, "verification": "swept-assumption"},
+    "prx_sd_dB": {"value": 0.5, "units": "dB", "source_doi": null, "verification": "swept-assumption"},
+    "lambda_grid": {"value": [0, 0.25, 0.5, 1, 2, 4], "units": "-", "source_doi": null, "verification": "design"}
+  },
+  "evaluation": {
+    "k_grid": {"value": [1.0, 1.5, 2.0, 2.5, 3.0, 4.36], "units": "-", "source_doi": "10.1109/LCOMM.2008.080193", "verification": "fulltext", "note": "Armstrong 2008 eq. 3: 7 dB -> k=2, 13 dB -> k=4.36; Dissanayake 2013 10 dB -> k=3"},
+    "lut1d_bins": {"value": 50, "units": "-", "source_doi": null, "verification": "design"},
+    "lut2d_bins": {"value": 20, "units": "-", "source_doi": null, "verification": "design"},
+    "lut_state_bins": {"value": 6, "units": "per dim", "source_doi": null, "verification": "design"},
+    "model_grid": {"value": {"I_rated_A": 5, "sigma_frac": 5, "T_hs_K": 24, "SNR_ref_dB": 15}, "units": "points per dim", "source_doi": null, "verification": "design"},
+    "b7_grid_points": {"value": 6, "units": "per latent (kappa_tilde, delta, eta0)", "source_doi": null, "verification": "design"},
+    "b7_select_states_per_unit": {"value": 20, "units": "states", "source_doi": null, "verification": "design"},
+    "b8_iterations": {"value": [4, 8, 12], "units": "golden-section steps", "source_doi": null, "verification": "design"},
+    "b8_test_states": {"value": 400, "units": "states", "source_doi": null, "verification": "design"},
+    "bootstrap_B": {"value": 10000, "units": "-", "source_doi": null, "verification": "design"},
+    "margin_decades": {"value": 0.10, "units": "decades", "source_doi": null, "verification": "design", "note": "equivalence margin, fixed before any result was seen"},
+    "c3_margin": {"value": 0.01, "units": "violation rate", "source_doi": null, "verification": "design"},
+    "cv_folds": {"value": 5, "units": "-", "source_doi": null, "verification": "design"},
+    "model_seeds": {"value": 5, "units": "-", "source_doi": null, "verification": "design"},
+    "learning_units": {"value": [10, 20, 40, 80, 160], "units": "units", "source_doi": null, "verification": "design"},
+    "latency_calls": {"value": 10000, "units": "calls", "source_doi": null, "verification": "design"}
+  },
+  "sweeps": {
+    "_comment": "One factor at a time from nominal; each on 50 units x 100 states; run by dcbias/sweeps.py. _joint: mandatory joint controls. _design: design overrides for every sweep run. 'stress' values lie outside every source.",
+    "driver.slope_per_K": {"value": [0, 0.003, 0.016], "stress": [0.020, 0.030]},
+    "driver.knee_K": {"value": [353.0, 373.0, 388.0]},
+    "driver.f_min": {"value": [0, 0.8]},
+    "led.delta": {"value": [0, 0.001, 0.003]},
+    "led.kappa_tilde": {"value": [0, 0.15, 0.42]},
+    "noise.rho": {"value": [0], "stress": [0.1, 1.0]},
+    "led.f3dB_over_B": {"value": [null, 0.5]},
+    "unit_spread.Rth": {"value": [0.15]},
+    "led.i_min_frac": {"value": [0.0, 0.05]},
+    "led.model": {"value": ["tsonev_cubic"]},
+    "_joint": [{"led.kappa_tilde": 0.0, "noise.rho": 0.0}],
+    "_design": {"design.n_units_id": 50, "design.n_train_units": 40, "design.n_units_ood": 0}
+  }
+}

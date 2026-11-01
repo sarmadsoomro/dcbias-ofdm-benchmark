@@ -1,0 +1,27 @@
+{
+ "_eval_provenance": {
+  "sha": "7f2e30715adfc8961a45e02974356377fd87f36e",
+  "dirty": false
+ },
+ "frontier": [
+  {
+   "iterations": 4,
+   "probe_evaluations": 6,
+   "probe_frames": 96,
+   "mean_regret": 0.03241296044138223
+  },
+  {
+   "iterations": 8,
+   "probe_evaluations": 10,
+   "probe_frames": 160,
+   "mean_regret": 0.017797039364500587
+  },
+  {
+   "iterations": 12,
+   "probe_evaluations": 14,
+   "probe_frames": 224,
+   "mean_regret": 0.01750829174395684
+  }
+ ],
+ "n_states": 400
+}

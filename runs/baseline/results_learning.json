@@ -1,0 +1,758 @@
+{
+ "_eval_provenance": {
+  "sha": "7f2e30715adfc8961a45e02974356377fd87f36e",
+  "dirty": false
+ },
+ "rows": [
+  {
+   "units": 10,
+   "seed": 0,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.003622509478975855
+  },
+  {
+   "units": 10,
+   "seed": 0,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0060745651454811546
+  },
+  {
+   "units": 10,
+   "seed": 0,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0046472188439328314
+  },
+  {
+   "units": 10,
+   "seed": 0,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0037092745766185626
+  },
+  {
+   "units": 10,
+   "seed": 0,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.01235838615669379
+  },
+  {
+   "units": 10,
+   "seed": 1,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.00310908676434528
+  },
+  {
+   "units": 10,
+   "seed": 1,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.006280803446006239
+  },
+  {
+   "units": 10,
+   "seed": 1,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.004656778767073904
+  },
+  {
+   "units": 10,
+   "seed": 1,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0037280928695493983
+  },
+  {
+   "units": 10,
+   "seed": 1,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.01119932865283466
+  },
+  {
+   "units": 10,
+   "seed": 2,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0036281586929249733
+  },
+  {
+   "units": 10,
+   "seed": 2,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.006540135414101865
+  },
+  {
+   "units": 10,
+   "seed": 2,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.005254717113330818
+  },
+  {
+   "units": 10,
+   "seed": 2,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0035914423380638185
+  },
+  {
+   "units": 10,
+   "seed": 2,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.010510425955517532
+  },
+  {
+   "units": 10,
+   "seed": 3,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0049706615937176206
+  },
+  {
+   "units": 10,
+   "seed": 3,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.00668162458196776
+  },
+  {
+   "units": 10,
+   "seed": 3,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.00506406378733905
+  },
+  {
+   "units": 10,
+   "seed": 3,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0035303108081333173
+  },
+  {
+   "units": 10,
+   "seed": 3,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.011609152524810486
+  },
+  {
+   "units": 10,
+   "seed": 4,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.005090422107504951
+  },
+  {
+   "units": 10,
+   "seed": 4,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.005824677660048033
+  },
+  {
+   "units": 10,
+   "seed": 4,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.005019400217761525
+  },
+  {
+   "units": 10,
+   "seed": 4,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.00373532825513742
+  },
+  {
+   "units": 10,
+   "seed": 4,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.01001152809997214
+  },
+  {
+   "units": 20,
+   "seed": 0,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.002498341119009699
+  },
+  {
+   "units": 20,
+   "seed": 0,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.004921620261234189
+  },
+  {
+   "units": 20,
+   "seed": 0,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.004265891385317115
+  },
+  {
+   "units": 20,
+   "seed": 0,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0031360673514988268
+  },
+  {
+   "units": 20,
+   "seed": 0,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.008432338726590634
+  },
+  {
+   "units": 20,
+   "seed": 1,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.002584534032408868
+  },
+  {
+   "units": 20,
+   "seed": 1,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.004827178392789474
+  },
+  {
+   "units": 20,
+   "seed": 1,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0037379538137140944
+  },
+  {
+   "units": 20,
+   "seed": 1,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0028940278906831904
+  },
+  {
+   "units": 20,
+   "seed": 1,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.010515903759081112
+  },
+  {
+   "units": 20,
+   "seed": 2,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0026145567108927176
+  },
+  {
+   "units": 20,
+   "seed": 2,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.004567536968574942
+  },
+  {
+   "units": 20,
+   "seed": 2,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.003801572193131296
+  },
+  {
+   "units": 20,
+   "seed": 2,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0025353739609335663
+  },
+  {
+   "units": 20,
+   "seed": 2,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.009402512854815392
+  },
+  {
+   "units": 20,
+   "seed": 3,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0030898632258057053
+  },
+  {
+   "units": 20,
+   "seed": 3,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.004468608301977689
+  },
+  {
+   "units": 20,
+   "seed": 3,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.003914720664516087
+  },
+  {
+   "units": 20,
+   "seed": 3,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.002799484760082106
+  },
+  {
+   "units": 20,
+   "seed": 3,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.008838777603817597
+  },
+  {
+   "units": 20,
+   "seed": 4,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.002159223454124983
+  },
+  {
+   "units": 20,
+   "seed": 4,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.004240132123758359
+  },
+  {
+   "units": 20,
+   "seed": 4,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.003610992315907198
+  },
+  {
+   "units": 20,
+   "seed": 4,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.002622839851000211
+  },
+  {
+   "units": 20,
+   "seed": 4,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.009437448471906819
+  },
+  {
+   "units": 40,
+   "seed": 0,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0020080947554704143
+  },
+  {
+   "units": 40,
+   "seed": 0,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0039491858436425074
+  },
+  {
+   "units": 40,
+   "seed": 0,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0028904621157175778
+  },
+  {
+   "units": 40,
+   "seed": 0,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0021200422992822907
+  },
+  {
+   "units": 40,
+   "seed": 0,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.007283509894452113
+  },
+  {
+   "units": 40,
+   "seed": 1,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0017933035948651053
+  },
+  {
+   "units": 40,
+   "seed": 1,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0034978971519863808
+  },
+  {
+   "units": 40,
+   "seed": 1,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.00274062097260264
+  },
+  {
+   "units": 40,
+   "seed": 1,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0020227286119025465
+  },
+  {
+   "units": 40,
+   "seed": 1,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.0070278890457932995
+  },
+  {
+   "units": 40,
+   "seed": 2,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0018767491330414713
+  },
+  {
+   "units": 40,
+   "seed": 2,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0036189905150326115
+  },
+  {
+   "units": 40,
+   "seed": 2,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.00287281869169444
+  },
+  {
+   "units": 40,
+   "seed": 2,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.002070989520143393
+  },
+  {
+   "units": 40,
+   "seed": 2,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.007836564354665532
+  },
+  {
+   "units": 40,
+   "seed": 3,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.001830495156847015
+  },
+  {
+   "units": 40,
+   "seed": 3,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0035713382403901733
+  },
+  {
+   "units": 40,
+   "seed": 3,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.002791258628734621
+  },
+  {
+   "units": 40,
+   "seed": 3,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.002060169150859846
+  },
+  {
+   "units": 40,
+   "seed": 3,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.007706147657736173
+  },
+  {
+   "units": 40,
+   "seed": 4,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.002016859572911631
+  },
+  {
+   "units": 40,
+   "seed": 4,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.003351197720285124
+  },
+  {
+   "units": 40,
+   "seed": 4,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0027633439279997766
+  },
+  {
+   "units": 40,
+   "seed": 4,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0024190506933463927
+  },
+  {
+   "units": 40,
+   "seed": 4,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.006669734827595779
+  },
+  {
+   "units": 80,
+   "seed": 0,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.00167769924093659
+  },
+  {
+   "units": 80,
+   "seed": 0,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0027305293054505635
+  },
+  {
+   "units": 80,
+   "seed": 0,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0020920494300784684
+  },
+  {
+   "units": 80,
+   "seed": 0,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.001731724260001925
+  },
+  {
+   "units": 80,
+   "seed": 0,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.00637735176952495
+  },
+  {
+   "units": 80,
+   "seed": 1,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.001659820115163261
+  },
+  {
+   "units": 80,
+   "seed": 1,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.002839928454704925
+  },
+  {
+   "units": 80,
+   "seed": 1,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0021422935305583585
+  },
+  {
+   "units": 80,
+   "seed": 1,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0015959195231994019
+  },
+  {
+   "units": 80,
+   "seed": 1,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.007107638961090297
+  },
+  {
+   "units": 80,
+   "seed": 2,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0016527166919973572
+  },
+  {
+   "units": 80,
+   "seed": 2,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.002760514774139806
+  },
+  {
+   "units": 80,
+   "seed": 2,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0020941685185717263
+  },
+  {
+   "units": 80,
+   "seed": 2,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0018843445380237098
+  },
+  {
+   "units": 80,
+   "seed": 2,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.006705672491830888
+  },
+  {
+   "units": 80,
+   "seed": 3,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0017028739261460012
+  },
+  {
+   "units": 80,
+   "seed": 3,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0028382756707856422
+  },
+  {
+   "units": 80,
+   "seed": 3,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0022341068733425975
+  },
+  {
+   "units": 80,
+   "seed": 3,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0015792074052768004
+  },
+  {
+   "units": 80,
+   "seed": 3,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.006861864898691348
+  },
+  {
+   "units": 80,
+   "seed": 4,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.001655385750088386
+  },
+  {
+   "units": 80,
+   "seed": 4,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0026642933225730376
+  },
+  {
+   "units": 80,
+   "seed": 4,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.002188077859005266
+  },
+  {
+   "units": 80,
+   "seed": 4,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0018747181482185189
+  },
+  {
+   "units": 80,
+   "seed": 4,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.006794970244237423
+  },
+  {
+   "units": 160,
+   "seed": 0,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0015614548668203424
+  },
+  {
+   "units": 160,
+   "seed": 0,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.002300123270597943
+  },
+  {
+   "units": 160,
+   "seed": 0,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0018802648345639414
+  },
+  {
+   "units": 160,
+   "seed": 0,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0015156350134672594
+  },
+  {
+   "units": 160,
+   "seed": 0,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.0063767830648324714
+  },
+  {
+   "units": 160,
+   "seed": 1,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0015614548668203424
+  },
+  {
+   "units": 160,
+   "seed": 1,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.002330025845096133
+  },
+  {
+   "units": 160,
+   "seed": 1,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0018802648345639414
+  },
+  {
+   "units": 160,
+   "seed": 1,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0014310787875095007
+  },
+  {
+   "units": 160,
+   "seed": 1,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.0063767830648324714
+  },
+  {
+   "units": 160,
+   "seed": 2,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0015614548668203424
+  },
+  {
+   "units": 160,
+   "seed": 2,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0022975785741507202
+  },
+  {
+   "units": 160,
+   "seed": 2,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0018802648345639414
+  },
+  {
+   "units": 160,
+   "seed": 2,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0013830216240807505
+  },
+  {
+   "units": 160,
+   "seed": 2,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.0063767830648324714
+  },
+  {
+   "units": 160,
+   "seed": 3,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0015614548668203424
+  },
+  {
+   "units": 160,
+   "seed": 3,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.00229070498195577
+  },
+  {
+   "units": 160,
+   "seed": 3,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0018802648345639414
+  },
+  {
+   "units": 160,
+   "seed": 3,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.001614508889755475
+  },
+  {
+   "units": 160,
+   "seed": 3,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.0063767830648324714
+  },
+  {
+   "units": 160,
+   "seed": 4,
+   "method": "ML_ridge_state_obs",
+   "mean_regret": 0.0015614548668203424
+  },
+  {
+   "units": 160,
+   "seed": 4,
+   "method": "ML_rf_state_obs",
+   "mean_regret": 0.0022910566015741382
+  },
+  {
+   "units": 160,
+   "seed": 4,
+   "method": "ML_hgb_state_obs",
+   "mean_regret": 0.0018802648345639414
+  },
+  {
+   "units": 160,
+   "seed": 4,
+   "method": "ML_mlp_state_obs",
+   "mean_regret": 0.0015733427122860718
+  },
+  {
+   "units": 160,
+   "seed": 4,
+   "method": "B6a_lut_state",
+   "mean_regret": 0.0063767830648324714
+  }
+ ]
+}
